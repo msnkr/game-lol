@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+  margin-top: 16pt;
   color: var(--light);
   display: flex;
   flex-direction: column;
