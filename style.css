@@ -1,0 +1,82 @@
+:root {
+  --darkest: #461959;
+  --dark: #7a316f;
+  --light: #cd6688;
+  --lightest: #aed8cc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100svh;
+  background-color: var(--darkest);
+}
+
+.container {
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0 40pt;
+  margin: 0;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 24pt;
+}
+
+.high-score {
+  margin-bottom: 16pt;
+}
+
+.countdown {
+  margin-bottom: 24pt;
+}
+
+.countdown-answers {
+  background-color: var(--lightest);
+  width: 120pt;
+  height: 120pt;
+  border-radius: 50%;
+  position: relative;
+}
+
+.countdown-number {
+  color: var(--darkest);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mode {
+  margin-bottom: 16pt;
+}
+
+.question {
+  margin-bottom: 16pt;
+  color: var(--lightest);
+}
+
+.is-true {
+  margin-bottom: 16pt;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  color: var(--darkest);
+  background-color: var(--lightest);
+  padding: 8pt 16pt;
+  border: none;
+  margin: 0 8pt;
+  border-radius: 4pt;
+  font-weight: bold;
+}
