@@ -4,10 +4,10 @@
     font-family: 'Montserrat', sans-serif; */
 
 :root {
-  --darkest: #461959;
-  --dark: #7a316f;
-  --light: #cd6688;
-  --lightest: #aed8cc;
+  --darkest: #78c1f3;
+  --dark: #9be8d8;
+  --light: #e2f6ca;
+  --lightest: #f8fdcf;
 }
 
 h1 {
