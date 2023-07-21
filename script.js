@@ -32,18 +32,16 @@ function isAnswerCorrect(answer, difficulty, e) {
   if (correctAnswer == answer) {
     count++;
 
-    setInterval(() => {
-      e.target.classList.add("correct"), 1000;
+    e.target.classList.add("correct");
+    setTimeout(() => {
+      e.target.classList.remove("correct"), 1000;
     });
-    e.target.classList.remove("correct");
-    e.target.classList.remove("incorrect");
     getQuestions(difficulty);
   } else {
-    setInterval(() => {
-      e.target.classList.add("incorrect"), 1000;
+    e.target.classList.add("incorrect");
+    setTimeout(() => {
+      e.target.classList.remove("incorrect"), 1000;
     });
-    e.target.classList.remove("incorrect");
-    e.target.classList.remove("correct");
     if (highestScore < count) {
       highestScore = count;
     }

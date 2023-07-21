@@ -126,11 +126,11 @@ button {
 }
 
 .btn.correct {
-  animation: rightButton 0.8s ease-in-out;
+  animation: rightButton 2s ease-in-out;
 }
 
 .btn.incorrect {
-  animation: wrongButton 0.8s ease-in-out;
+  animation: wrongButton 2s ease-in-out;
 }
 
 @keyframes rightButton {
@@ -157,13 +157,16 @@ button {
   }
 
   .select-difficulty h1 {
-    font-size: 16pt;
+    font-size: 14pt;
   }
 
   .select-difficulty .btn {
-    width: 100pt;
+    width: 80pt;
   }
 
+  .container {
+    margin-top: -60pt;
+  }
   .heading {
     margin-bottom: 16pt;
   }
