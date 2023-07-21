@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@600&display=swap");
+
+/* font-family: 'Courier Prime', monospace;
+    font-family: 'Montserrat', sans-serif; */
+
 :root {
   --darkest: #461959;
   --dark: #7a316f;
   --light: #cd6688;
   --lightest: #aed8cc;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h4 {
+  font-family: "Courier Prime", monospace;
 }
 
 * {
@@ -15,8 +29,32 @@ body {
   background-color: var(--darkest);
 }
 
+.select-difficulty {
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  padding: 0 40pt;
+  margin: 0;
+  position: relative;
+}
+
+.select-difficulty .btn {
+  margin: 8pt;
+  width: 200pt;
+}
+
+.select-difficulty.hidden {
+  display: none;
+}
+
+.container.hidden {
+  display: none;
+}
+
 .container {
-  margin-top: 16pt;
   color: var(--light);
   display: flex;
   flex-direction: column;
