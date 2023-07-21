@@ -18,6 +18,11 @@ let count = 0;
 let correctAnswer;
 let difficulty = "";
 
+function getHighestScore() {
+  const savedScore = localStorage.getItem("score");
+  highestScore = savedScore;
+}
+
 function hideUnhideContainers() {
   difficultyContainer.classList.toggle("hidden");
   container.classList.toggle("hidden");
@@ -31,6 +36,7 @@ function isAnswerCorrect(answer, difficulty) {
     if (highestScore < count) {
       highestScore = count;
     }
+    localStorage.setItem("score", highestScore);
     count = 0;
     getQuestions(difficulty);
   }
@@ -88,3 +94,5 @@ hardBtn.addEventListener("click", () => {
 
   getQuestions(difficulty);
 });
+
+getHighestScore();
