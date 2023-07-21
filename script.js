@@ -28,11 +28,22 @@ function hideUnhideContainers() {
   container.classList.toggle("hidden");
 }
 
-function isAnswerCorrect(answer, difficulty) {
+function isAnswerCorrect(answer, difficulty, e) {
   if (correctAnswer == answer) {
     count++;
+
+    setInterval(() => {
+      e.target.classList.add("correct"), 1000;
+    });
+    e.target.classList.remove("correct");
+    e.target.classList.remove("incorrect");
     getQuestions(difficulty);
   } else {
+    setInterval(() => {
+      e.target.classList.add("incorrect"), 1000;
+    });
+    e.target.classList.remove("incorrect");
+    e.target.classList.remove("correct");
     if (highestScore < count) {
       highestScore = count;
     }
@@ -64,14 +75,14 @@ async function getQuestions(difficulty) {
 }
 
 // Events
-trueBtn.addEventListener("click", () => {
+trueBtn.addEventListener("click", (e) => {
   let answer = "True";
-  isAnswerCorrect(answer, difficulty);
+  isAnswerCorrect(answer, difficulty, e);
 });
 
-falseBtn.addEventListener("click", () => {
+falseBtn.addEventListener("click", (e) => {
   let answer = "False";
-  isAnswerCorrect(answer, difficulty);
+  isAnswerCorrect(answer, difficulty, e);
 });
 
 easyBtn.addEventListener("click", () => {
