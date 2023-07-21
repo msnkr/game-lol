@@ -50,7 +50,7 @@ function updateDom(data) {
 
 async function getQuestions(difficulty) {
   const response = await fetch(
-    `https://opentdb.com/api.php?amount=1&category=9&difficulty=${difficulty}&type=boolean`
+    `https://opentdb.com/api.php?amount=1&difficulty=${difficulty}&type=boolean`
   );
   const jsonData = await response.json();
   let questionData = jsonData.results;
