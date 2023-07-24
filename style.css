@@ -32,6 +32,7 @@ body {
 }
 
 .select-difficulty {
+  margin-top: 40pt;
   color: var(--light);
   display: flex;
   flex-direction: column;
