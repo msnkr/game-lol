@@ -108,7 +108,8 @@ body {
 .is-true {
   margin-bottom: 16pt;
   text-align: center;
-  height: 100pt;
+  height: 80pt;
+  padding: 8pt;
 }
 
 button {
