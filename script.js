@@ -12,7 +12,6 @@ const falseBtn = document.querySelector(".false");
 
 const container = document.querySelector(".container");
 const difficultyContainer = document.querySelector(".select-difficulty");
-const clearBtn = document.querySelector(".clear-score");
 
 let highestScore = 0;
 let count = 0;
@@ -103,11 +102,6 @@ hardBtn.addEventListener("click", () => {
   hideUnhideContainers();
 
   getQuestions(difficulty);
-});
-
-clearBtn.addEventListener("click", () => {
-  localStorage.clear();
-  window.location.reload();
 });
 
 getHighestScore();

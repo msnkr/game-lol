@@ -84,8 +84,8 @@ body {
 
 .countdown-answers {
   background-color: var(--lightest);
-  width: 120pt;
-  height: 120pt;
+  width: 100pt;
+  height: 100pt;
   border-radius: 50%;
   position: relative;
   box-shadow: 1pt 2pt 8pt rgba(0, 0, 0, 0.5);
@@ -131,10 +131,6 @@ button {
 
 .btn.incorrect {
   animation: wrongButton 10s ease-in-out;
-}
-
-.clear-score {
-  margin-top: 8pt;
 }
 
 @keyframes rightButton {
