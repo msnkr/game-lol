@@ -88,7 +88,7 @@ body {
   height: 120pt;
   border-radius: 50%;
   position: relative;
-  box-shadow: 1pt 2pt 6pt rgba(0, 0, 0, 0.3);
+  box-shadow: 1pt 2pt 8pt rgba(0, 0, 0, 0.5);
 }
 
 .countdown-number {
@@ -122,15 +122,19 @@ button {
   margin: 0 8pt;
   border-radius: 4pt;
   font-weight: bold;
-  box-shadow: 1pt 2pt 6pt rgba(0, 0, 0, 0.3);
+  box-shadow: 1pt 2pt 8pt rgba(0, 0, 0, 0.5);
 }
 
 .btn.correct {
-  animation: rightButton 2s ease-in-out;
+  animation: rightButton 10s ease-in-out;
 }
 
 .btn.incorrect {
-  animation: wrongButton 2s ease-in-out;
+  animation: wrongButton 10s ease-in-out;
+}
+
+.clear-score {
+  margin-top: 8pt;
 }
 
 @keyframes rightButton {
