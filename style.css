@@ -27,18 +27,16 @@ h4 {
 }
 
 body {
-  height: 100svh;
+  height: 100vh;
   background-color: var(--darkest);
 }
 
 .select-difficulty {
-  margin-top: 40pt;
   color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
   padding: 0 40pt;
   margin: 0;
   position: relative;
@@ -58,13 +56,11 @@ body {
 }
 
 .container {
-  margin-top: -20pt;
   color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
   padding: 0 40pt;
   margin: 0;
   position: relative;
@@ -112,6 +108,7 @@ body {
 .is-true {
   margin-bottom: 16pt;
   text-align: center;
+  height: 100pt;
 }
 
 button {
@@ -165,9 +162,6 @@ button {
     width: 80pt;
   }
 
-  .container {
-    margin-top: -60pt;
-  }
   .heading {
     margin-bottom: 16pt;
   }
