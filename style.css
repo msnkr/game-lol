@@ -27,7 +27,7 @@ h4 {
 }
 
 body {
-  height: 100svh;
+  height: 100vh;
   background-color: var(--darkest);
 }
 
@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  height: 100vh;
   padding: 0 40pt;
   margin: 0;
   position: relative;
@@ -63,7 +63,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  height: 100vh;
   padding: 0 40pt;
   margin: 0;
   position: relative;
@@ -111,6 +111,8 @@ body {
 .is-true {
   margin-bottom: 16pt;
   text-align: center;
+  height: 120pt;
+  padding: 8pt;
 }
 
 button {
