@@ -173,16 +173,23 @@ button {
   .container {
     margin-top: -60pt;
   }
+
   .heading {
-    margin-bottom: 16pt;
+    font-size: 16pt;
+    margin-bottom: 8pt;
   }
 
   .high-score {
-    margin-bottom: 16pt;
+    margin-bottom: 8pt;
   }
 
   .countdown {
-    margin-bottom: 16pt;
+    margin-bottom: 8pt;
+  }
+
+  .countdown-answers {
+    width: 80pt;
+    height: 80pt;
   }
 
   .mode {
