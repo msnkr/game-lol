@@ -27,7 +27,7 @@ h4 {
 }
 
 body {
-  height: 100vh;
+  height: 100svh;
   background-color: var(--darkest);
 }
 
@@ -111,8 +111,6 @@ body {
 .is-true {
   margin-bottom: 16pt;
   text-align: center;
-  height: 150pt;
-  padding: 8pt;
 }
 
 button {

@@ -20,9 +20,6 @@ let difficulty = "";
 
 function getHighestScore() {
   const savedScore = localStorage.getItem("score");
-  if (savedScore == null) {
-    localStorage.setItem("score", "0");
-  }
   highestScore = savedScore;
 }
 
