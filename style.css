@@ -158,6 +158,10 @@ button {
     padding: 20pt;
   }
 
+  .container {
+    max-height: 100vh;
+  }
+
   .select-difficulty h1 {
     font-size: 14pt;
   }
